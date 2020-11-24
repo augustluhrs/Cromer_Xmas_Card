@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+<!--     <a-scene embedded arjs> -->
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4;">
+<!--       <a-marker preset="hiro"> -->
+      <a-marker 
+        type="barcode"
+        value="8"
+<!--       unicorn   -->
+        <a-entity
+          position="0 0 -.25"
+          scale=".2 .2 .2"
+          rotation="0 0 0"
+          gltf-model="https://cdn.glitch.com/8f71e5ba-41de-4bf7-9c87-b8c06f9ab6de%2Fuploads_files_2400084_%E7%8B%AC%E8%A7%92%E5%85%BD.glb?v=1601653091276"
+        ></a-entity>
+<!--       girl   -->
+        <a-entity
+          position=".5 0 0"
+          scale="5 5 5"
+          rotation="0 0 0"
+          gltf-model="https://cdn.glitch.com/8f71e5ba-41de-4bf7-9c87-b8c06f9ab6de%2Fuploads_files_2495417_C001.glb?v=1601653228802"
+        ></a-entity>
+<!--       old man   -->
+        <a-entity
+          position="0 0 .25"
+          scale="5 5 5"
+          rotation="0 0 0"
+          gltf-model="https://cdn.glitch.com/8f71e5ba-41de-4bf7-9c87-b8c06f9ab6de%2Fuploads_files_2363202_M003.glb?v=1601653246859"
+        ></a-entity>
+<!--      blonde guy    -->
+        <a-entity
+          position="-.5 0 0"
+          scale="5 5 5"
+          rotation="0 0 0"
+          gltf-model="https://cdn.glitch.com/8f71e5ba-41de-4bf7-9c87-b8c06f9ab6de%2Fuploads_files_2582366_F010.glb?v=1601653246418"
+        ></a-entity>
+<!--      dog    -->
+        <a-entity
+          position="-1 0 -.5"
+          scale=".05 .05 .05"
+          rotation="0 0 0"
+          gltf-model="https://cdn.glitch.com/8f71e5ba-41de-4bf7-9c87-b8c06f9ab6de%2Fuploads_files_2271330_wolfseahorse.glb?v=1601653542819"
+        ></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>

@@ -1,4 +1,3 @@
-# Cromer_xmas_card
-AR Xmas Card
+# Xmas Card AR test
 
 using three.js and AR.js
